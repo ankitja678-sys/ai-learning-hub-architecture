@@ -1,109 +1,413 @@
 # ai-learning-hub-architecture
-# 🚀 AI Learning Hub (v2.0-Production-Ready)
+# 🚀 AI Learning Hub
 
-An enterprise-grade, decoupled AI-Automated Interactive Workbench and System Design Studio built on top of **Next.js 15 (App Router)** and integrated with frontier **Google Gemini 2.5 Flash LLM Engines** [1.2]. 
+> An AI-powered learning platform that combines AI chat, coding assistance, image generation, system design, interview preparation, and personalized learning into a single application.
 
-The platform is explicitly engineered to bridge the gap between static text streaming tokens and real-time client-side visualization models, enabling developers to generate, simulate, and manually edit software architectures on a fluid whiteboard grid seamlessly.
-
----
-
-## ⚡ Core Technical Infrastructure & Feature Matrix
-
-* **🤖 Dynamic AI Pilot Blueprint Generator:** Embedded directly into the left-hand guide panel [1.2]. Translates raw user prompts (e.g., "Draw Uber architecture") into objective, machine-readable JSON topologies in under 0.5 seconds [1.2].
-* **📐 Smart Canvas Auto-Sizing Engine:** Engineered a client-side layout parser that measures text bounding strings in real-time (`ctx.measureText`) and dynamically scales component boxes to prevent text overflow [1.2].
-* **🏹 Index-Locked Connectivity Matrix:** Hard-locks connectivity arrows to unique element indexes (`idx`) rather than unverified asset IDs, completely resolving state overlap and boundary leakage bugs [1.2].
-* **🎨 Fully Editable HTML5 Canvas Workbench:** Integrates an advanced canvas streaming context (`snapshot.current`) that allows immediate manual modifications (Pencil, Shapes, Text, Eraser overlays) straight on top of AI-generated nodes [1.2].
-* **🍿 Adaptive Video Lecture Streams:** A Netflix-grade curated interface optimized with flexible `grid-cols-1 md:grid-cols-2 xl:grid-cols-3` boundaries that auto-fetches database sequences and supports index-based local track completion states [1.2].
-* **📡 Multi-Part Binary Ingestion Tunnel:** Processes uploaded corporate PDFs, Word Docs (DOCX), and raw text logs directly into in-memory ArrayBuffers, bypassing serverless storage limitations without runtime timeouts.
-* **🎯 Temporal Grounding & Factual Clamping:** Hard-locks system instruction constraints strictly to the **Current 2026 Timeline** with a deterministic `temperature: 0.0` matrix and **Google Search Tool integration** to pull live, verified match results and truth from the web [1.2, 1.3].
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![React](https://img.shields.io/badge/React-19-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini%202.5%20Flash-4285F4)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## ⚙️ Decoupled System Architecture Topology
+# 🌍 Live Demo
 
-The entire platform operates over an asynchronous, serverless state handshake map optimized for zero-cost operation and zero-latency degradation:
+🔗 https://your-domain.com
 
-```text
-[Browser Viewport Layer] (React 19 / Tailwind CSS / HTML5 Canvas Engine)
-           │
-           ▼ (Native multipart/form-data Handshake & visualViewport Tracking)
-[Next.js 15 App Router Edge Nodes] (app/api/chat / app/api/draw Router)
-           │
-           ├─► [In-Memory ArrayBuffer Decoupler] ──► [mammoth / PDFParser Memory Streams]
-           │
-           ├─► [Index-Locked State Mapping Switcher] ──► (Prevents Element Collision)
-           │
-           ▼ (Secure Google Gen AI SDK Handshake)
-[Frontier AI Core Layer] ──► [Google Search Tool Live Internet Tunnel] ──► (Verified 2026 Truth)
+-https://ai-learning-hub-ik62.vercel.app/--
+
+# 📖 Overview
+
+AI Learning Hub is a full-stack AI platform designed to help students and developers learn faster and build software more efficiently.
+
+Instead of offering only a chatbot, the platform integrates multiple AI tools into one unified workspace, including:
+
+- AI Chat
+- AI Agent
+- AI Code Generator
+- AI Image Studio
+- AI Project Architect
+- AI System Design Board
+- AI Notes Generator
+- AI Quiz Generator
+- AI Mock Interview
+- AI Roadmap Generator
+- AI Video Learning
+- Global AI Tools Directory
+
+The long-term goal is to build an AI-powered learning operating system.
+
+---
+
+# ✨ Features
+
+## 💬 AI Chat
+
+- Google Gemini powered chat
+- Markdown support
+- File upload support
+- Context-aware responses
+
+---
+
+## 🤖 AI Agent
+
+An intelligent assistant capable of:
+
+- answering questions
+- helping build projects
+- generating code
+- planning software architecture
+
+Future versions will support:
+
+- long-term memory
+- tool calling
+- autonomous workflows
+
+---
+
+## 💻 AI Code Generator
+
+Generate production-ready code for:
+
+- Python
+- JavaScript
+- TypeScript
+- React
+- Next.js
+- SQL
+- Machine Learning
+
+---
+
+## 🎨 AI Image Studio
+
+Generate AI images using text prompts.
+
+Features:
+
+- High-quality generation
+- Download support
+- Clean responsive interface
+
+---
+
+## 📐 AI System Design Board
+
+Interactive whiteboard where users can:
+
+- generate software architecture
+- edit diagrams manually
+- draw custom components
+- connect services visually
+
+---
+
+## 🏗 AI Project Architect
+
+Generate complete project plans including:
+
+- folder structure
+- database design
+- API architecture
+- development roadmap
+
+---
+
+## 📝 AI Notes Generator
+
+Convert topics into structured notes.
+
+Supports:
+
+- Beginner
+- Intermediate
+- Advanced
+
+---
+
+## 🎯 AI Quiz Generator
+
+Generate quizzes automatically from topics.
+
+---
+
+## 🎤 AI Mock Interview
+
+Practice:
+
+- HR Interview
+- Coding Interview
+- System Design
+- MCQ Tests
+
+---
+
+## 🗺 Roadmap Generator
+
+Create personalized learning roadmaps.
+
+Examples:
+
+- AI Engineer
+- Frontend Developer
+- Backend Developer
+- Machine Learning Engineer
+
+---
+
+## 📺 AI Video Learning
+
+Curated educational videos inside the platform.
+
+---
+
+# 🧠 Upcoming Features
+
+Currently under development:
+
+- ✅ AI Memory
+- ✅ Persistent Chat History
+- ✅ User Profile Memory
+- ✅ AI Tool Calling
+- ✅ Voice Assistant
+- ✅ AI Resume Builder
+- ✅ AI Interview Coach
+- ✅ Multi-Agent Workflows
+
+---
+
+# ⚙️ Tech Stack
+
+## Frontend
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
+
+## Backend
+
+- Next.js API Routes
+- Google Gemini 2.5 Flash
+- PDF Parser
+- Mammoth DOCX Parser
+
+## Authentication
+
+- Clerk
+
+## Database
+
+- Supabase (In Progress)
+
+## Deployment
+
+- Vercel
+
+---
+
+# 🏛 Architecture
+
 ```
-## 🛠️ Local Compilation, Deployment & Verification
+Browser
+     │
+     ▼
+Next.js App Router
+     │
+     ▼
+API Routes
+     │
+     ▼
+Google Gemini
+     │
+     ▼
+AI Response
+```
 
-Follow these strict operational sequences to compile the system architecture locally:
+Future architecture:
 
-### 1. Clone the Architecture Cluster
+```
+Browser
+
+↓
+
+AI Agent
+
+↓
+
+Memory Engine
+
+↓
+
+Supabase
+
+↓
+
+Gemini
+
+↓
+
+Tool Calling
+
+↓
+
+Response
+```
+
+---
+
+# 📂 Project Structure
+
+```
+app/
+components/
+lib/
+hooks/
+public/
+types/
+```
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository
+
 ```bash
-git clone https://github.com
-cd ai-learning-hub-architecture
+git clone https://github.com/YOUR_USERNAME/ai-learning-hub.git
 ```
 
-### 2. Install Core Dependency Trees
+Install dependencies
+
 ```bash
 npm install
 ```
 
-### 3. Configure Environmental Injection Keys
-Create a `.env.local` file in your root matrix directory and insert your secure Google API key:
-```env
-GEMINI_API_KEY=your_actual_frontier_gemini_api_key_node_here
+Create
+
+```
+.env.local
 ```
 
-### 4. Execute Production Code Compilation
+```
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build production
+
 ```bash
 npm run build
 ```
 
-### 5. Launch the Localized Microservice
-```bash
-npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) inside your incognito viewport loop to run clean states.
+---
+
+# 📸 Screenshots
+
+## AI Chat
+
+(Add Screenshot)
 
 ---
 
-## 🎨 Core Code Highlight: The Dynamic Canvas Auto-Sizer
+## AI Agent
 
-This client-side execution block reads raw machine-readable JSON topologies and dynamically adjusts component geometry based on bounding string measurements to prevent visual truncation:
-
-```typescript
-// Measures active text strings and injects dynamic padding anchors in real-time
-blueprint.forEach((cmd, index) => {
-  if (cmd.type === "square") {
-    ctx.font = "bold 13px sans-serif";
-    const textWidth = ctx.measureText(cmd.text).width;
-    const dynamicWidth = Math.max(130, textWidth + 40); // 40px internal pad anchor
-    const dynamicHeight = 60;
-
-    ctx.strokeRect(cmd.x, cmd.y, dynamicWidth, dynamicHeight);
-    ctx.fillText(cmd.text, cmd.x + dynamicWidth / 2, cmd.y + dynamicHeight / 2);
-  }
-});
-```
+(Add Screenshot)
 
 ---
 
-## 🤝 Startup Accelerator & Developer Relations Partnerships
+## AI Image Studio
 
-This repository is built with **Craftsmanship, Extreme Ownership, and Entrepreneurial Hustle** [1.2]. The codebase is intentionally structured to be lightweight, modular, and optimized under intensive user traffic.
-
-**🚨 WE ARE CONTINUOUSLY UPDATING THE SYSTEM ARChITECTURE LIVE BASED ON PEER REVIEWS.**
-
-### 🌟 Active Sponsorship Ingestion Openings
-We are actively seeking evaluation handshakes with tech incubators and developer advocacy initiatives:
-* **Cloud Infrastructure Support:** Seeking Azure/GCP resource credits to scale the distributed RAM token pipelines.
-* **Hardware Integration:** Seeking enterprise hardware support to test visual viewport rendering frames on multi-device matrices.
-* **Workflow Mentorship:** Open to code review cycles and sprint collaboration with senior engineering teams.
-
-For direct architectural verification or partnership inquiries, contact the platform architect: **Ankit (Founder & Lead Engineer, AI Learning Hub)**.
+(Add Screenshot)
 
 ---
-*Maintained under strict open-source governance. Built for the next generation of software engineers.*
+
+## System Design Board
+
+(Add Screenshot)
+
+---
+
+## Dashboard
+
+(Add Screenshot)
+
+---
+
+# 🛣 Roadmap
+
+## Version 1
+
+- AI Chat
+- Notes
+- Images
+- Quiz
+- Mock Interview
+
+## Version 2
+
+- AI Agent
+- AI Memory
+- Chat History
+
+## Version 3
+
+- Autonomous AI Agent
+- Tool Calling
+- Voice Assistant
+
+## Version 4
+
+- Team Workspace
+- AI Collaboration
+- Enterprise Dashboard
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Feel free to:
+
+- Fork the repository
+- Create a feature branch
+- Submit pull requests
+- Report bugs
+- Suggest improvements
+
+---
+
+# 👨‍💻 About the Founder
+
+**Ankit Jatav**
+
+Founder & Lead Engineer
+
+AI Learning Hub
+
+Building practical AI tools to make software engineering and AI education more accessible.
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future development.
+
+---
+
+# 📄 License
+
+MIT License*Maintained under strict open-source governance. Built for the next generation of software engineers.*
