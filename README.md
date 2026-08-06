@@ -1,19 +1,32 @@
 # ai-learning-hub-architecture
 
-# 🚀 AI Learning Hub (v2.0-Production-Ready)
+# 🚀 AI Learning Hub (v2.0-Production)
 
-An enterprise-grade, decoupled AI-powered learning operating system and interactive development workbench built on top of **Next.js 15 (App Router)**, **React 19**, and integrated with frontier **Google Gemini LLM Engines** [1.2]. 
+An enterprise-grade, decoupled AI-powered learning operating system and interactive development workbench built on top of **Next.js 15 (App Router)**, **React 19**, and integrated with frontier **Google Gemini LLM Engines** and high-velocity **Flux Text-to-Image pipelines**.
 
-The platform is explicitly engineered to bridge the gap between static text streaming tokens and real-time client-side visualization models, enabling developers to generate, simulate, and manually edit complex software architectures seamlessly [1.2].
+The platform is explicitly engineered to bridge the gap between static text streaming tokens and real-time client-side visualization models, enabling developers to generate, simulate, and manually edit complex software architectures seamlessly.
 
 ---
 
 ## 🌍 Live Interactive Workspace
 
-📌 **Live Deployment:** [https://ai-learning-hub-ik62.vercel.app/](https://ai-learning-hub-ik62.vercel.app/)  
-📌 **Architecture Blueprint Repository:** [https://github.com](https://github.com)
+📌 **Live Production Deployment:** [ai-learning-hub-ik62.vercel.app](https://ai-learning-hub-ik62.vercel.app/)  
+📌 **Architecture Blueprint Repository:** [://github.com](https://github.com)  
+
+💡 **Developer Notice:** Experience the full power of Nova AI, the AI System Design Board, and the AI Image Studio for **FREE** with our daily complimentary credits. No credit card required. Premier Tier subscription unlocked globally at just **₹750/month**.
 
 ---
+
+## ⚡ Core Technical Infrastructure & Feature Matrix
+
+*   **🤖 AI System Design Board:** An interactive HTML5 Canvas whiteboard where a custom AI pilot parses descriptions into machine-readable JSON topologies in 0.5 seconds. Supports immediate manual overlays (Pencil, Shapes, Eraser, Text) over index-locked node connectivity vectors.
+*   **🎨 AI Image Studio:** A premium, Google Gemini-inspired dark neon image generation interface powered by FLUX pipelines. Features responsive custom aspect ratios (1:1, 16:9, 4:3, 3:4), built-in neural loading state pulse loops, and client-side download injectors.
+*   **💬 Context-Aware AI Chat & Agent (Nova):** Intelligent, multi-turn assistant powered by Gemini Flash featuring local context state tracking, custom markdown rendering, and direct file upload parsing.
+*   **🏗️ AI Project Architect:** End-to-end software planning matrix that auto-compiles production-ready file structures, relational database schemas, and developmental roadmaps.
+*   **🍿 Adaptive Micro-Learning Streams:** Next-gen educational video grid featuring responsive layout configurations (`grid-cols-1 md:grid-cols-2 xl:grid-cols-3`) with index-locked completion trackers.
+*   **🎯 Career Acceleration Engine:** Dynamic interview coaching rigs (System Design, Coding Sprints, HR Simulators), auto-generated algorithmic quizzes, and customized learn-to-build roadmaps.
+
+
 
 ## ⚡ Core Technical Infrastructure & Feature Matrix
 
