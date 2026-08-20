@@ -1,4 +1,4 @@
-# AI Learning Hub
+# AI LEARNING HUB
 
 AI Learning Hub is an AI-powered learning, development, and productivity workspace built with Next.js, React, TypeScript, Prisma, Supabase, Clerk, and multiple AI providers.
 
