@@ -1,48 +1,48 @@
 # 🧠 AI Learning Hub
 
-> **An AI-powered learning, development, and productivity workspace built with Next.js, React, TypeScript, Prisma, Supabase, Clerk, and multiple AI providers.**
+> An AI-powered learning, development, productivity, and career workspace built with Next.js, React, TypeScript, Prisma, Supabase, Clerk, and multiple AI providers.
 
-AI Learning Hub is a full-stack web platform designed to bring **AI learning tools, development utilities, career preparation, and intelligent assistants** into one unified workspace.
+AI Learning Hub is a full-stack AI platform that brings AI chat, AI agents, code generation, project architecture, learning tools, interview preparation, creative tools, and developer utilities into one unified workspace.
 
-Instead of using separate applications for AI chat, code generation, learning roadmaps, quizzes, mock interviews, notes, image generation, and project planning, AI Learning Hub brings these capabilities together inside a single dashboard.
+**Learn → Build → Test → Debug → Improve → Deploy**
 
 ---
 
 ## 🌐 Live Demo
 
-🚀 **Live Application:**
-https://ai-learning-hub-ik62.vercel.app
+🚀 **Live Application:**  
+https://ai-learning-hub-ik62.vercel.app/
 
-📦 **GitHub Repository:**
-https://github.com
+📦 **GitHub Repository:**  
+Add your GitHub repository URL here.
 
-> The live application may require authentication for some dashboard features.
+> Some dashboard features require authentication.
 
 ---
 
-## ✨ What is AI Learning Hub?
+# ✨ About AI Learning Hub
 
-AI Learning Hub is built around the idea of creating a personal **AI-powered learning and development workspace**.
+AI Learning Hub is designed to help students, developers, and AI enthusiasts learn technology and turn their ideas into working projects.
 
-The platform combines:
+Instead of switching between multiple applications for AI conversations, coding, learning, project planning, architecture, interview preparation, notes, and creative tools, AI Learning Hub brings these workflows together in one platform.
 
-* 🤖 AI conversations
-* 🧠 AI Agent
-* 💻 AI code generation
-* 🏗️ Project architecture planning
-* 🎨 AI image generation
-* 🖊️ Interactive design board
-* 📚 Learning resources
-* 📝 Notes
-* 🧪 Quizzes
-* 🧠 Flashcards
-* 🎯 Mock interviews
-* 🗺️ Learning roadmaps
-* 📊 Progress tracking
-* 💬 Persistent conversation history
-* 🔐 User authentication
+### Main capabilities
 
-The goal is to make learning technology and building software more accessible through one integrated platform.
+- 🤖 AI Chat
+- 🧠 Nova AI Agent
+- 💻 AI Code Generator
+- 👀 Live Artifact Preview
+- 🏗️ AI Project Architect
+- 🎨 AI Image Studio
+- 🖊️ AI Design Board
+- 📚 Knowledge & Learning
+- 📝 Notes
+- 🧠 Flashcards
+- 🧪 Quizzes
+- 🗺️ Learning Roadmaps
+- 🎯 Mock Tests & Interviews
+- 💬 Persistent Conversation History
+- 🔐 Authentication
 
 ---
 
@@ -50,26 +50,26 @@ The goal is to make learning technology and building software more accessible th
 
 ## 🤖 AI Chat
 
-A conversational AI workspace designed for learning, technical questions, brainstorming, and general assistance.
+AI-powered conversational workspace for learning, technical questions, brainstorming, debugging, coding assistance, and general AI assistance.
 
 ### Features
 
-* Multi-turn conversations
-* Markdown responses
-* Code formatting
-* Conversation history
-* User-specific sessions
-* AI response actions
-* Context-aware conversations
-* Authentication-aware data
+- Multi-turn conversations
+- Markdown responses
+- Code formatting
+- Conversation history
+- Persistent sessions
+- User-specific conversations
+- Context-aware interactions
+- Authentication-aware data
 
 ---
 
-# 🧠 Nova AI Agent
+## 🧠 Nova AI Agent
 
-The AI Agent is one of the central features of AI Learning Hub.
+Nova is the AI Agent inside AI Learning Hub.
 
-It is designed to handle both simple questions and more complex tasks.
+It is designed to handle both simple questions and more complex tasks using an AI routing layer and multiple configured providers.
 
 ### Architecture
 
@@ -87,47 +87,116 @@ AI Router
   │
   ├──► Gemini
   │
-  ├──► Groq fallback
+  ├──► Groq
   │
   └──► Other configured providers
   │
   ▼
-Response
+AI Response
   │
   ▼
-Persistent Session History
+Persistent Session
 ```
 
 ### Provider fallback
 
-The application can attempt to use Gemini first and fall back to another configured provider when Gemini is unavailable or exceeds its quota.
+The AI routing layer can use another configured provider when the primary provider fails or reaches a limitation.
 
-This makes the AI experience more resilient during provider failures or quota limitations.
+```text
+              ┌─────────────┐
+              │  AI Router  │
+              └──────┬──────┘
+                     │
+                 Try Gemini
+                     │
+              ┌──────┴──────┐
+              │             │
+           Success        Failure
+              │             │
+              ▼             ▼
+           Response        Groq
+                             │
+                             ▼
+                          Response
+```
+
+This architecture helps improve resilience against provider errors, quota limitations, and temporary availability problems.
 
 ---
 
 # 💻 AI Code Generator
 
-Generate application code from natural-language requirements.
+The AI Code Generator converts natural-language requirements into application code.
 
-The code-generation workflow is designed to help users quickly create project foundations and experiment with ideas.
+Example:
 
-### Capabilities
+```text
+Create a beautiful modern responsive login page
+using React and Tailwind CSS.
+```
 
-* Natural-language coding prompts
-* Structured generated code
-* Modern web development workflows
-* Next.js-oriented generation
-* Copyable code output
-* Developer-friendly interface
+The generated code can be inspected, copied, edited, and previewed.
+
+### Features
+
+- Natural-language coding prompts
+- React code generation
+- Tailwind CSS generation
+- TypeScript support
+- Modern UI generation
+- Copyable code
+- Editable generated code
+- Code preview workflow
+- Developer-focused interface
+
+---
+
+# 👀 Live Artifact Preview
+
+AI Learning Hub includes a browser-based artifact preview system for generated React and TypeScript code.
+
+Generated components can be transformed and rendered inside a sandboxed preview environment.
+
+### Preview workflow
+
+```text
+AI Generated TSX
+       │
+       ▼
+Artifact Sandbox
+       │
+       ▼
+Babel TypeScript Transform
+       │
+       ▼
+React Runtime
+       │
+       ▼
+Live Preview
+```
+
+The artifact workflow supports:
+
+- React components
+- TypeScript
+- JSX
+- Tailwind CSS
+- Lucide React icons
+- Editable generated code
+- Preview / Code tabs
+- Run Code workflow
+- Browser-safe component replacements
+- Runtime error display
+
+This makes it easier to inspect AI-generated interfaces before integrating them into a real project.
 
 ---
 
 # 🏗️ AI Project Architect
 
-Turn an application idea into a structured development plan.
+AI Project Architect helps transform an application idea into a structured development plan.
 
-The Project Architect can help organize:
+### Workflow
 
 ```text
 Project Idea
@@ -151,29 +220,41 @@ File Structure
 Development Roadmap
 ```
 
-This is intended to help developers move from **idea → architecture → implementation**.
+It can help developers understand:
+
+- Project requirements
+- Technology choices
+- Frontend architecture
+- Backend architecture
+- Database requirements
+- API structure
+- Authentication requirements
+- File organization
+- Development steps
 
 ---
 
 # 🎨 AI Image Studio
 
-AI-powered image generation interface for creating visual assets from prompts.
+AI-powered image generation workspace for creating visual assets from text prompts.
 
 ### Features
 
-* Prompt-based image generation
-* Multiple aspect ratios
-* Modern dark UI
-* Loading states
-* Generated image preview
-* Client-side image actions
+- Prompt-based image generation
+- Image preview
+- Multiple aspect ratios
+- Loading states
+- Modern interface
+- Generated image workflows
 
-Supported layouts include common formats such as:
+Supported formats include:
 
-* `1:1`
-* `16:9`
-* `4:3`
-* `3:4`
+```text
+1:1
+16:9
+4:3
+3:4
+```
 
 ---
 
@@ -181,61 +262,74 @@ Supported layouts include common formats such as:
 
 An interactive visual workspace for designing and explaining software architectures.
 
-The design board combines AI-generated architecture concepts with manual editing capabilities.
+### Tools
 
-### Interactive tools
+- ✏️ Pencil
+- 🔲 Shapes
+- 📝 Text
+- 🧹 Eraser
+- 🖱️ Selection
+- 🤖 AI-generated architecture
 
-* ✏️ Pencil
-* 🔲 Shapes
-* 📝 Text
-* 🧹 Eraser
-* 🖱️ Selection
-* 🤖 AI-generated architecture
+### Workflow
 
-The goal is to allow developers to **generate an architecture with AI and then manually refine it**.
+```text
+Architecture Idea
+       │
+       ▼
+   AI Generation
+       │
+       ▼
+   Design Board
+       │
+       ▼
+ Manual Editing
+       │
+       ▼
+Final Architecture
+```
+
+The goal is to combine AI-generated architecture with manual visual editing.
 
 ---
 
-# 📚 Knowledge & Learning Workspace
+# 📚 Learning Workspace
 
-AI Learning Hub includes tools designed specifically for technical learning.
+AI Learning Hub contains multiple tools designed for technical learning.
 
 ### Learning features
 
-* Knowledge workspace
-* Learning resources
-* Tutorials
-* Notes
-* Flashcards
-* Quizzes
-* Learning roadmaps
-* Progress tracking
+- 📚 Knowledge workspace
+- 📖 Tutorials
+- 📝 Notes
+- 🧠 Flashcards
+- 🧪 Quizzes
+- 🗺️ Learning roadmaps
+- 📊 Progress tracking
 
-These tools are designed to support both structured learning and self-directed experimentation.
+The learning system is designed to connect theoretical knowledge with practical development.
 
 ---
 
-# 🧪 Mock Test & Interview Preparation
+# 🧪 Mock Tests & Interview Preparation
 
-The platform includes multiple interview-preparation experiences.
+AI Learning Hub provides interactive preparation tools for technical and career development.
 
-### Available areas
+### Areas
 
-* 💻 Coding interviews
-* 🧠 MCQ quizzes
-* 🏗️ System design
-* 👔 HR interviews
-* 🎯 Technical preparation
+- 💻 Coding interviews
+- 🧠 MCQ tests
+- 🏗️ System design
+- 👔 HR interviews
+- 🎯 Technical preparation
 
-The goal is to provide an interactive environment for practicing before real interviews.
+The goal is to provide an interactive environment where users can practice before real interviews.
 
 ---
 
 # 🗺️ Learning Roadmaps
 
-Users can work through structured learning paths.
-
-The roadmap system is designed around:
+Learning roadmaps help users organize their learning journey.
 
 ```text
 Goal
@@ -244,39 +338,42 @@ Goal
 Learning Topics
  │
  ▼
+Practice
+ │
+ ▼
 Projects
  │
  ▼
-Practice
+Interview Preparation
  │
  ▼
 Progress
 ```
 
-This helps connect theoretical learning with practical development.
+The roadmap system connects learning goals with practical projects and preparation.
 
 ---
 
 # 📝 Notes
 
-The Notes system allows users to save learning material and important information inside the platform.
+The Notes system allows users to create and store learning material and important information inside the platform.
 
-Notes can be associated with users and stored persistently using the application's database layer.
+Notes can be associated with users and stored persistently through the application's database layer.
 
 ---
 
 # 💬 Persistent Conversation History
 
-AI Learning Hub supports persistent sessions for conversations.
+AI Learning Hub supports persistent conversation sessions.
 
 The application uses:
 
-* Prisma ORM
-* Supabase PostgreSQL
-* Global sessions
-* User-specific history
+- Prisma ORM
+- Supabase PostgreSQL
+- User-specific sessions
+- Persistent message history
 
-Conceptually:
+### Concept
 
 ```text
 User
@@ -294,110 +391,113 @@ User
        └── Message
 ```
 
-This allows conversations to remain available across sessions rather than existing only in temporary client state.
+This allows conversations to remain available instead of existing only in temporary client state.
 
 ---
 
 # 🔐 Authentication
 
-Authentication is handled using **Clerk**.
+Authentication is handled using Clerk.
 
-The authentication layer provides:
+### Authentication features
 
-* Sign up
-* Sign in
-* Protected dashboard routes
-* User identity
-* User-specific application data
+- Sign up
+- Sign in
+- User identity
+- Protected dashboard routes
+- User-specific data
+- Authentication-aware API requests
 
 ---
 
 # 🏛️ Application Architecture
 
-The application follows a modern full-stack Next.js architecture.
+AI Learning Hub follows a modern full-stack Next.js architecture.
 
 ```text
                          ┌─────────────────────┐
                          │       Browser       │
-                         │   React 19 / UI     │
+                         │    React 19 UI      │
                          └──────────┬──────────┘
                                     │
                                     ▼
                          ┌─────────────────────┐
                          │     Next.js 15      │
-                         │    App Router       │
+                         │     App Router      │
                          └──────────┬──────────┘
                                     │
-                  ┌─────────────────┼─────────────────┐
-                  │                 │                 │
-                  ▼                 ▼                 ▼
-             AI APIs           Auth Layer        Application APIs
-                  │                 │                 │
-                  ▼                 ▼                 ▼
-          ┌──────────────┐      Clerk          Next.js Routes
-          │  AI Router   │
-          └──────┬───────┘
-                 │
-        ┌────────┴────────┐
-        ▼                 ▼
-     Gemini             Groq
-        │                 │
-        └────────┬────────┘
-                 │
-                 ▼
-          AI Response
-                 │
-                 ▼
-        ┌─────────────────┐
-        │ Prisma ORM      │
-        └────────┬────────┘
-                 │
-                 ▼
-        ┌─────────────────┐
-        │ Supabase        │
-        │ PostgreSQL      │
-        └─────────────────┘
+              ┌─────────────────────┼─────────────────────┐
+              │                     │                     │
+              ▼                     ▼                     ▼
+       Application APIs        Authentication          AI Layer
+              │                     │                     │
+              ▼                     ▼                     ▼
+       Next.js API Routes         Clerk              AI Router
+                                                          │
+                                      ┌───────────────────┼──────────────────┐
+                                      │                   │                  │
+                                      ▼                   ▼                  ▼
+                                   Gemini               Groq            OpenRouter
+                                      │                   │                  │
+                                      └───────────────────┼──────────────────┘
+                                                          │
+                                                          ▼
+                                                   AI Response
+                                                          │
+                                                          ▼
+                                                    Prisma ORM
+                                                          │
+                                                          ▼
+                                                Supabase PostgreSQL
 ```
 
 ---
 
 # ⚙️ Tech Stack
 
-## Frontend
+### Frontend
 
-* Next.js 15
-* React 19
-* TypeScript
-* Tailwind CSS
-* Lucide Icons
-* HTML5 Canvas
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- HTML5 Canvas
 
-## Backend
+### Backend
 
-* Next.js App Router
-* Next.js API Routes
-* Server-side AI integrations
-* Prisma ORM
-* PostgreSQL
+- Next.js App Router
+- Next.js API Routes
+- Server-side AI integrations
+- Prisma ORM
+- PostgreSQL
 
-## Database
+### Database
 
-* Supabase PostgreSQL
-* Prisma Client
+- Supabase PostgreSQL
+- Prisma Client
 
-## Authentication
+### Authentication
 
-* Clerk
+- Clerk
 
-## AI
+### AI Providers
 
-* Google Gemini
-* Groq
-* OpenRouter where configured
+- Google Gemini
+- Groq
+- OpenRouter where configured
 
-## Deployment
+### Deployment
 
-* Vercel
+- Vercel
+
+### Development
+
+- VS Code
+- Git
+- GitHub
+- npm
+- Prisma CLI
 
 ---
 
@@ -428,6 +528,8 @@ ai-learning-hub/
 │   │   ├── roadmap/
 │   │   ├── run-code/
 │   │   └── ...
+│   │
+│   ├── artifact-preview/
 │   │
 │   ├── dashboard/
 │   │   ├── agent/
@@ -463,12 +565,11 @@ ai-learning-hub/
 │   └── generated-client/
 │
 ├── public/
-│
 ├── types/
 │
-├── .env
-├── .env.local
 ├── package.json
+├── tsconfig.json
+├── next.config.*
 └── README.md
 ```
 
@@ -476,20 +577,11 @@ ai-learning-hub/
 
 # 🗄️ Database Architecture
 
-The application uses Prisma with Supabase PostgreSQL.
+The application uses Prisma ORM with Supabase PostgreSQL.
 
-Current database models include application entities such as:
+The database layer supports application entities such as sessions, messages, notes, user-related data, and other platform features.
 
-```text
-Note
-ChatMessage
-user_profiles
-GlobalSession
-```
-
-The global session architecture allows the application to maintain conversations independently from the UI.
-
-### Example
+### Session concept
 
 ```text
 GlobalSession
@@ -502,13 +594,13 @@ GlobalSession
 └── updatedAt
 ```
 
-Additional message/session models can be extended as the platform evolves.
+The database architecture can evolve as new features are introduced.
 
 ---
 
 # 🔑 Environment Variables
 
-Create a local `.env.local` file.
+Create a `.env.local` file.
 
 Example:
 
@@ -524,9 +616,21 @@ NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your_clerk_publishable_key"
 CLERK_SECRET_KEY="your_clerk_secret_key"
 ```
 
-> ⚠️ **Never commit `.env`, `.env.local`, API keys, database passwords, or Clerk secrets to GitHub.**
+### ⚠️ Important
 
-Recommended `.gitignore` entries:
+Never commit secrets to GitHub.
+
+Never expose:
+
+```text
+API keys
+Database passwords
+Clerk secret keys
+Private tokens
+Deployment credentials
+```
+
+Recommended `.gitignore`:
 
 ```gitignore
 .env
@@ -559,7 +663,7 @@ Create:
 .env.local
 ```
 
-and add the required credentials.
+Add the required credentials.
 
 ## 4. Generate Prisma Client
 
@@ -569,13 +673,13 @@ npx prisma generate
 
 ## 5. Synchronize the database
 
-If you are using the current development workflow:
+For the current development workflow:
 
 ```bash
 npx prisma@6.2.1 db push
 ```
 
-## 6. Start development server
+## 6. Start the development server
 
 ```bash
 npm run dev
@@ -589,15 +693,17 @@ http://localhost:3000
 
 ---
 
-# ✅ Production Build Verification
+# 🧪 Production Build Verification
 
-The project has been successfully verified using:
+Before deploying, verify the production build:
 
 ```bash
 npm run build
 ```
 
-The production build completed successfully with:
+A successful build should complete the Next.js compilation and TypeScript validation process.
+
+Expected output includes:
 
 ```text
 ✓ Compiled successfully
@@ -608,58 +714,65 @@ The production build completed successfully with:
 ✓ Finalizing page optimization
 ```
 
-This confirms that the application can pass the Next.js production compilation and TypeScript validation pipeline.
-
 ---
 
 # 🚀 Deployment
 
 AI Learning Hub is designed to run on Vercel.
 
-## Deployment workflow
+### Deployment workflow
 
 ```text
-GitHub
-   │
-   ▼
-Vercel
-   │
-   ▼
-Next.js Build
-   │
-   ▼
-Production Deployment
+Local Development
+       │
+       ▼
+      Git
+       │
+       ▼
+    GitHub
+       │
+       ▼
+    Vercel
+       │
+       ▼
+ Next.js Build
+       │
+       ▼
+ Production
 ```
 
-### Required Vercel environment variables
+### Vercel Environment Variables
 
-Add the same production credentials used by the application to:
+Configure the required environment variables in:
 
-**Vercel → Project → Settings → Environment Variables**
+```text
+Vercel
+ → Project
+ → Settings
+ → Environment Variables
+```
 
-For example:
+Typical variables include:
 
 ```text
 DATABASE_URL
 DIRECT_URL
+
 GEMINI_API_KEY
 GROQ_API_KEY
 OPENROUTER_API_KEY
+
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
 CLERK_SECRET_KEY
 ```
 
 After changing environment variables, redeploy the application.
 
-> Environment variables are environment-specific. A variable existing on your local machine does not automatically make it available to Vercel.
-
 ---
 
 # 🔄 AI Provider Fallback
 
-One of the important backend improvements is provider fallback.
-
-The application can use a routing layer instead of coupling every feature directly to one AI provider.
+The application uses an AI routing architecture to manage multiple AI providers.
 
 ```text
 Application
@@ -668,71 +781,34 @@ Application
   AI Router
      │
      ▼
- Gemini
+   Gemini
      │
-     ├── Success ──► Response
-     │
-     └── Failure
-          │
-          ▼
-        Groq
-          │
-          ▼
-       Response
+ ┌───┴────┐
+ │        │
+Success  Failure
+ │        │
+ ▼        ▼
+Response  Groq
+           │
+           ▼
+        Response
 ```
 
-This approach helps reduce the impact of individual provider failures and quota limitations.
+This architecture can help handle:
+
+- Provider downtime
+- API errors
+- Rate limits
+- Usage quotas
+- Temporary provider failures
 
 ---
 
-# 📈 Current Development Status
+# 🧩 API Architecture
 
-## Phase 1 — Foundation
+The backend is organized into separate API routes for different product capabilities.
 
-**Status: ✅ Completed**
-
-* Next.js application foundation
-* Dashboard
-* Authentication
-* Core UI
-* API architecture
-* AI integrations
-* Database integration
-* Initial learning tools
-
-## Phase 2 — Unified Workspace
-
-**Status: ✅ Completed**
-
-* Persistent sessions
-* Conversation history
-* AI Agent
-* Code Generator
-* Project Architect
-* Design Board
-* Learning tools
-* Career tools
-
-## Phase 3 — Autonomous AI Workflows
-
-**Status: 🚧 In Progress**
-
-Planned improvements include:
-
-* Multi-agent workflows
-* Better tool orchestration
-* Voice interaction
-* More advanced code execution
-* Improved project generation
-* More persistent user memory
-* Better AI provider routing
-* More automation across development workflows
-
----
-
-# 🧪 Current API Surface
-
-The application currently contains API routes for areas including:
+Examples:
 
 ```text
 /api/agent
@@ -740,7 +816,7 @@ The application currently contains API routes for areas including:
 /api/code-generator
 /api/draw
 /api/images
-/api/history/sessions
+/api/history
 /api/knowledge
 /api/memory
 /api/mock-test
@@ -752,123 +828,277 @@ The application currently contains API routes for areas including:
 /api/videos
 ```
 
-The API layer is organized around individual product capabilities rather than a single monolithic endpoint.
+This keeps individual application capabilities separated instead of relying on one monolithic API endpoint.
 
 ---
 
-# 🎯 Why I Built This
+# 📊 Current Development Status
 
-AI tools are becoming increasingly powerful, but developers and students often have to move between many different applications.
+## Phase 1 — Foundation
 
-AI Learning Hub is an attempt to bring these workflows together:
+**Status: ✅ Completed**
+
+- Next.js application foundation
+- React UI
+- Tailwind CSS
+- Dashboard
+- Authentication
+- API architecture
+- Database integration
+- Initial AI integrations
+
+## Phase 2 — Unified AI Workspace
+
+**Status: ✅ Completed**
+
+- AI Chat
+- Nova AI Agent
+- AI Code Generator
+- AI Project Architect
+- AI Image Studio
+- AI Design Board
+- Learning tools
+- Notes
+- Quizzes
+- Flashcards
+- Roadmaps
+- Mock tests
+- Persistent sessions
+- Conversation history
+
+## Phase 3 — Developer AI Workflows
+
+**Status: 🚧 In Progress**
+
+Current development focus includes:
+
+- Improved AI code generation
+- Live artifact preview
+- Better code validation
+- Improved AI provider routing
+- Developer workflows
+- Project generation
+- Deployment workflows
+- Advanced AI agents
+
+---
+
+# 🎯 Development Philosophy
+
+AI Learning Hub is built around this workflow:
 
 ```text
-Learn
-  ↓
-Ask AI
-  ↓
-Understand
-  ↓
-Build
-  ↓
-Test
-  ↓
-Debug
-  ↓
-Document
-  ↓
-Track Progress
+        LEARN
+          │
+          ▼
+        ASK AI
+          │
+          ▼
+      UNDERSTAND
+          │
+          ▼
+         BUILD
+          │
+          ▼
+         TEST
+          │
+          ▼
+        DEBUG
+          │
+          ▼
+       IMPROVE
+          │
+          ▼
+        DEPLOY
 ```
 
-The long-term goal is to build a platform where users can **learn technology and immediately turn that knowledge into working projects**.
+The goal is not only to provide AI answers, but to help users turn those answers into practical results.
+
+---
+
+# 💡 Why I Built AI Learning Hub
+
+Students and developers often need many different tools for learning and building software.
+
+For example:
+
+```text
+AI Chat
+Code Generator
+Learning Platform
+Interview Preparation
+Architecture Tool
+Notes
+Image Generator
+Project Planner
+```
+
+AI Learning Hub is an attempt to bring these workflows together.
+
+### Long-term vision
+
+```text
+Learn a technology
+       ↓
+Ask AI questions
+       ↓
+Generate a project
+       ↓
+Understand the architecture
+       ↓
+Write code
+       ↓
+Preview the result
+       ↓
+Test and debug
+       ↓
+Deploy
+```
+
+The long-term goal is to build an AI-powered workspace where users can learn technology and immediately turn that knowledge into working products.
 
 ---
 
 # 🛣️ Roadmap
 
-### 🤖 AI
+## 🤖 AI
 
-* [ ] Multi-agent orchestration
-* [ ] Improved provider routing
-* [ ] Tool-use improvements
-* [ ] Voice interaction
-* [ ] Better contextual memory
-* [ ] More reliable AI workflows
+- [ ] Multi-agent orchestration
+- [ ] Improved AI provider routing
+- [ ] Better tool usage
+- [ ] Voice interaction
+- [ ] Better contextual memory
+- [ ] More reliable AI workflows
+- [ ] Advanced AI agents
 
-### 💻 Development
+## 💻 Developer Tools
 
-* [ ] Advanced code execution
-* [ ] Automated debugging
-* [ ] GitHub workflow improvements
-* [ ] Project generation improvements
-* [ ] Deployment automation
+- [ ] Advanced code execution
+- [ ] Automated debugging
+- [ ] GitHub workflow improvements
+- [ ] Project generation improvements
+- [ ] Deployment automation
+- [ ] Better artifact preview
+- [ ] More framework support
 
-### 📚 Learning
+## 📚 Learning
 
-* [ ] More learning paths
-* [ ] Personalized curriculum
-* [ ] Better progress analytics
-* [ ] More interview simulations
-* [ ] Advanced practice environments
+- [ ] Personalized learning paths
+- [ ] More learning resources
+- [ ] Personalized curriculum
+- [ ] Better progress analytics
+- [ ] More interview simulations
+- [ ] Advanced coding practice
 
-### 🎨 Creative Tools
+## 🎨 Creative Tools
 
-* [ ] More image-generation workflows
-* [ ] Improved design-board features
-* [ ] AI-assisted UI generation
-* [ ] Exportable architecture diagrams
+- [ ] Improved image workflows
+- [ ] Better design-board features
+- [ ] AI-assisted UI generation
+- [ ] Exportable architecture diagrams
+- [ ] More visual AI tools
 
 ---
 
-# 🔒 Security Notes
+# 🔒 Security
 
-This project uses several security-sensitive services.
+Security is an important part of the application architecture.
 
 Never expose:
 
-* API keys
-* Database passwords
-* Clerk secret keys
-* Authentication secrets
-* Private deployment credentials
+```text
+API Keys
+Database Passwords
+Clerk Secret Keys
+Private Tokens
+Deployment Credentials
+```
 
-Frontend environment variables should only contain values intentionally designed to be public.
+Sensitive values should remain in server-side environment variables.
 
-Server-side secrets should remain in server-side environment variables.
+Only values intentionally designed to be public should use the `NEXT_PUBLIC_` prefix.
 
 ---
 
 # ⚠️ Important Notes
 
-AI provider availability and quotas can change.
+AI providers can have:
 
-For example, free-tier AI APIs may return rate-limit responses such as HTTP `429`.
+- Rate limits
+- Usage quotas
+- Temporary outages
+- Model availability changes
+- API changes
+
+For example:
+
+```text
+HTTP 429
+Rate Limit Exceeded
+```
+
+can occur when a provider reaches a usage limit.
 
 The application therefore supports fallback behavior where configured.
 
-Database connectivity also depends on the production environment and correctly configured Supabase connection strings.
+Database connectivity also depends on correctly configured Supabase connection strings and production environment variables.
 
 ---
 
-# 👨‍💻 Creator
+# 🧑‍💻 Creator
 
 ## Ankit Jatav
 
 **Founder & Lead Developer — AI Learning Hub**
 
-I am building AI-powered software with a focus on:
+Building AI-powered software focused on:
 
-* Artificial Intelligence
-* Generative AI
-* Full-stack development
-* AI Agents
-* RAG systems
-* Developer tools
-* Learning platforms
+- Artificial Intelligence
+- Generative AI
+- AI Agents
+- Full-stack development
+- RAG systems
+- Developer tools
+- Learning platforms
+- AI-powered productivity
 
 ### Mission
 
-> **Build practical AI tools that help people learn faster, build better software, and turn ideas into working products.**
+> Build practical AI tools that help people learn faster, build better software, and turn ideas into working products.
+
+---
+
+# 🤝 Contributing
+
+Contributions, ideas, feedback, and bug reports are welcome.
+
+### Development workflow
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+cd ai-learning-hub
+
+npm install
+
+npm run dev
+```
+
+Create a feature branch:
+
+```bash
+git checkout -b feature/your-feature
+```
+
+After making changes:
+
+```bash
+git add .
+git commit -m "feat: improve AI Learning Hub"
+git push origin feature/your-feature
+```
+
+Then create a Pull Request on GitHub.
 
 ---
 
@@ -876,22 +1106,24 @@ I am building AI-powered software with a focus on:
 
 If you find AI Learning Hub interesting:
 
-⭐ Star the repository
-🐛 Report bugs
-💡 Suggest features
-🔧 Contribute improvements
-📢 Share the project
+- ⭐ Star the repository
+- 🐛 Report bugs
+- 💡 Suggest features
+- 🔧 Contribute improvements
+- 📢 Share the project
 
 ---
 
 # 📄 License
 
-Add your preferred license here.
+This project is currently intended for personal and educational use.
 
-For example:
+A formal open-source license can be added when the project is officially released as open source.
 
-```text
-MIT License
-```
+---
 
-if the project is intended to be open source under MIT.
+# 🚀 AI Learning Hub
+
+> **Learn. Build. Experiment. Improve. Deploy.**
+
+**AI Learning Hub — One workspace for learning, building, and working with AI.**
