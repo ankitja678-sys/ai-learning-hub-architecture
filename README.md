@@ -752,19 +752,7 @@ Vercel
  → Environment Variables
 ```
 
-Typical variables include:
 
-```text
-DATABASE_URL
-DIRECT_URL
-
-GEMINI_API_KEY
-GROQ_API_KEY
-OPENROUTER_API_KEY
-
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
-CLERK_SECRET_KEY
-```
 
 After changing environment variables, redeploy the application.
 
