@@ -583,16 +583,7 @@ The database layer supports application entities such as sessions, messages, not
 
 ### Session concept
 
-```text
-GlobalSession
-│
-├── id
-├── userId
-├── title
-├── toolType
-├── createdAt
-└── updatedAt
-```
+
 
 The database architecture can evolve as new features are introduced.
 
