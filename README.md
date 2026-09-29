@@ -28,21 +28,7 @@ Instead of switching between multiple applications for AI conversations, coding,
 
 ### Main capabilities
 
-- 🤖 AI Chat
-- 🧠 Nova AI Agent
-- 💻 AI Code Generator
-- 👀 Live Artifact Preview
-- 🏗️ AI Project Architect
-- 🎨 AI Image Studio
-- 🖊️ AI Design Board
-- 📚 Knowledge & Learning
-- 📝 Notes
-- 🧠 Flashcards
-- 🧪 Quizzes
-- 🗺️ Learning Roadmaps
-- 🎯 Mock Tests & Interviews
-- 💬 Persistent Conversation History
-- 🔐 Authentication
+
 
 ---
 
