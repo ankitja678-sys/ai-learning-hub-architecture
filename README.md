@@ -936,15 +936,7 @@ The long-term goal is to build an AI-powered workspace where users can learn tec
 - [ ] More reliable AI workflows
 - [ ] Advanced AI agents
 
-## 💻 Developer Tools
 
-- [ ] Advanced code execution
-- [ ] Automated debugging
-- [ ] GitHub workflow improvements
-- [ ] Project generation improvements
-- [ ] Deployment automation
-- [ ] Better artifact preview
-- [ ] More framework support
 
 ## 📚 Learning
 
